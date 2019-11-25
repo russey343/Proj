@@ -1,5 +1,5 @@
 {
-  "name": "get-started-node",
+  "name": "Proj",
   "main": "server.js",
   "description": "An introduction to developing Node.js apps on the IBM Cloud platform",
   "version": "0.1.1",

@@ -1,10 +1,10 @@
 const http = require('http');
-const url  = require('url');
+const url  = require('mongodb+srv://rus:<rus123>@cluster0-ynycb.mongodb.net/test?retryWrites=true&w=majority');
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 const ObjectId = require('mongodb').ObjectID;
 const mongoDBurl = '';
-const dbName = '';
+const dbName = 'test';
 
 const server = http.createServer((req,res) => {
 	let timestamp = new Date().toISOString();

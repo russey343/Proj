@@ -3,7 +3,7 @@ const url  = require('url');
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 const ObjectId = require('mongodb').ObjectID;
-const mongoDBurl = '';
+const mongoDBurl = 'mongodb+srv://rus:<password>@cluster0-ynycb.mongodb.net/test?retryWrites=true&w=majority';
 const dbName = '';
 
 const server = http.createServer((req,res) => {

@@ -1,27 +1,14 @@
 {
-  "name": "Proj",
-  "main": "server.js",
-  "description": "An introduction to developing Node.js apps on the IBM Cloud platform",
-  "version": "0.1.1",
-  "private": false,
-  "engines": {
-    "node": "10.*"
-  },
-  "scripts": {
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/russey343/Proj"
-  },
-  "dependencies": {
-    "@cloudant/cloudant": "^3.0.2",
-    "body-parser": "^1.17.x",
-    "cfenv": "^1.0.x",
-    "dotenv": "^4.0.0",
-    "express": "^4.15.x",
-    "mongodb": "^3.0.10"
-  },
-  "author": "IBM Corp",
-  "license": "Apache-2.0"
+	"name": "t06-sample02",
+	"description": "COMPS381F - MongoDB driver",
+	"version": "0.0.1",
+	"dependencies": {
+		"mongodb": "3.1"
+	},
+	"scripts": {
+		"start": "node server.js"
+	},
+	"engines": {
+		"node": ">= 6.0.0"
+	}
 }

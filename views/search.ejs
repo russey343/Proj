@@ -1,0 +1,44 @@
+<html>
+      <title>Login</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+   <body>
+         <header class="w3-container w3-teal">
+               <h1>Menu</h1>
+         </header>
+
+      
+      <H1>Hello, <%= username %></H1> 
+      <H4>Result of searching <%=key %> in <%= word%></H4>
+      <H4>Total <%= allrest %> restaurant found</H4>      
+      <br>
+  <div class="container-fluid">
+   <div class="w3-container w3-card-4">
+         <table class="table table-striped table-bordered table-hover table-scroll">
+           <thead>
+             <tr>
+               <th>Restaurant Name</th>
+             </tr>
+           </thead>
+           <tbody>
+               <% for(var i=0; i < restn.length; i++) { %>
+               <tr>
+                  <td><a href='/detail?_id=<%= restn[i]._id%>'><%= restn[i].restname%></a></td>
+                           
+               </tr>
+               <% } %>           
+           </tbody>
+         </table>
+     </div>
+    </div>
+   
+   <div class="w3-container">
+         <a href="/logout" style="text-decoration: none">
+             <button class="w3-btn w3-section w3-teal w3-ripple">Logout</button>
+         </a>
+         <a href="/" style="text-decoration: none">
+            <button class="w3-btn w3-section w3-teal w3-ripple">Go back</button>
+        </a>
+     </div>
+   </body>
+</html>

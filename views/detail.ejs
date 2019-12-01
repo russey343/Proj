@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title><%=restname%></title>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <stype </head> <body>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+
+        </script>
+
+        </script>
+        <div class="w3-container w3-teal">
+            <h1><%=restname%></h1>
+            
+        </div>
+        <img src= "<%=newimg%>"
+        class="w3-image w3-border w3-padding" style="max-width:600px;width:100%">
+
+        <div class="w3-container">
+            <p>
+            <label class="w3-label w3-validate">Borough: <%=Borough%></label></p>
+            <label class="w3-label w3-validate">Cuisine: <%=Cuisine%></label></p>
+            <label class="w3-label w3-validate">Street: <%=Street%></label></p>
+            <label class="w3-label w3-validate">Building: <%=Building%></label></p>
+            <label class="w3-label w3-validate">Zipcode: <%=Zipcode%></label></p>
+            <label class="w3-label w3-validate">GPS: <<%=Coordlat%> ,<%=Coordlon%>></label></p>
+            <label class="w3-label w3-validate">Rating: </label></p>
+
+
+
+
+                <ol>
+                    <li>1: 2 </li>
+                </ol>
+
+            <p>
+                <label class="w3-label w3-validate">Created by: <%=Owner%></label></p>
+            <p>
+        </div>
+
+      
+        <a href="/gmap?_id=<%=id%>">Map</a>
+
+        <div class="w3-container">
+            <a href="/rate?_id=<%=id%>" style="text-decoration: none">
+                <button class="w3-btn w3-section w3-teal w3-ripple">Rate</button>
+            </a>
+            <a href="/edit?_id=<%=id%>" style="text-decoration: none">
+                <button class="w3-btn w3-section w3-teal w3-ripple">Edit</button>
+            </a>
+            <a href="/remove?_id=<%=id%>" style="text-decoration: none">
+                <button class="w3-btn w3-section w3-teal w3-ripple">Delete</button>
+            </a>
+            <button class="w3-btn w3-section w3-teal w3-ripple" onclick="goBack()">Go Back</button>
+        </div>
+        </body>
+
+</html>

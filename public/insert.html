@@ -1,0 +1,65 @@
+<html>
+<title>Create New Restaurant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+<body>
+		<div class="w3-container w3-teal">
+				<h1>Create New Restaurant</h1>
+			  </div>
+	<br> 
+	<br> 
+	<br> 
+	<div class="container" > 
+		<div class="row"> 
+		<div class="col-md-3"> 
+					
+		</div> 
+				
+		<div class="col-md-6 main"> 
+			<form action="/insert_rest" enctype="multipart/form-data"  method="post"
+			class="w3-container" style="width:100%">  
+			<p>	<label class="w3-label w3-validate">Name</label>	
+			<input class="box" type="text" name="restname" id="restname"
+			placeholder="Name" required /></p>	 
+			<p>	<label class="w3-label w3-validate">Borough</label>
+			<input class="box" type="text" name="Borough" id="Borough"
+			placeholder="Borough" /></p>
+			<p>	<label class="w3-label w3-validate">Cuisine</label>								
+			<input class="box" type="text" name="Cuisine" id="Cuisine"
+			placeholder="Cuisine" /></p>
+			<p>	<label class="w3-label w3-validate">Street</label>
+			<input class="box" type="text" name="Street" id="Street"
+			placeholder="Street" /></p>
+			<p>	<label class="w3-label w3-validate">Building</label>
+			<input class="box" type="text" name="Building" id="Building"
+			placeholder="Building" /></p>
+			<p>	<label class="w3-label w3-validate">Zipcode</label> 
+			<input class="box" type="text" name="Zipcode" id="Zipcode"
+			placeholder="Zipcode" /></p> 
+			<p>	<label class="w3-label w3-validate">Coordlon</label>
+			<input class="box" type="text" name="Coordlon" id="Coordlon"
+			placeholder="GPS:Coord.lon" /></p> 
+			<p>	<label class="w3-label w3-validate">Coordlat</label>
+			<input class="box" type="text" name="Coordlat" id="Coordlat"
+			placeholder="GPS:Coord.lat" /></p>
+			<p>Image upload:</p>
+			<input type="file" name="picture" required/>
+			<br>
+			<br> 
+			<input type="submit" class="w3-btn w3-section w3-teal w3-ripple" id="submitDetails"
+			name="submitDetails" value="Submit" />
+			<button class="w3-btn w3-section w3-teal w3-ripple" onclick="goBack()">Go Back</button>
+			</form> 
+			
+
+		</div> 
+				
+				
+		<div class="col-md-3"> 
+		</div> 
+				
+	</div> 
+	</div> 
+</body> 
+</html>	 
